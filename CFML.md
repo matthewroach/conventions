@@ -2,6 +2,8 @@
 
 ### General
 
+*I use the OpenBD CFML Engine, so some of these conventions are specific to OpenBD.*
+
 Extension of General conventions
 
 * Declare object at the very beginning of the file
@@ -11,7 +13,6 @@ Extension of General conventions
   	* For all CFC's
 
 * CF Tags for page output only. Within HTML Only
-
 
 * Break CFC's into manageable and grouped functions
 
@@ -195,7 +196,7 @@ Example:
 
 	</cfif>
 
-	<cfif isDefined('session.user')>
+	<cfif ( isDefined('session.user') )>
 		doing something here 
  	<cfelse>
 		need done here

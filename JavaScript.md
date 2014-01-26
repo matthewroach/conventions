@@ -7,7 +7,7 @@ Extension of General conventions
 
 * Use single quotes - This means you do not need to escape double quotes when needed to use HTML 
 * Use strict equality checks (===) over abstract equality checks (==)
-* 
+
 **Use Vanilla JavaScript where possible**
 
 Example: 
