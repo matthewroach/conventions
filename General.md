@@ -40,6 +40,11 @@ Leave a line above the first comment line, and below the last line of comment
 	 * and Here
 	 * 
 	**/
+	
+	
+	//
+	//		Sass Comments Heading Blocks
+	//	___________________________________________________________________________
 
 	
 	<!---
@@ -54,6 +59,6 @@ Notice above the space of the at start of line before the asterisk the start and
 
 	/* --- CSS Comment Here --- */
 
-	or
+	// Sass Comments ( These are not output in compiled output )
 
 	// --- JS Comment / cfscript
