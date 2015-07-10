@@ -1,64 +1,71 @@
-## General Conventions
+**The file you are editing should look like one person has created it. This makes it as easy as possible for developers to read and edit each other’s code. Following the coding standards detailed below ensures that.**
 
-**The file you are editing should look like one person has been inside it, take a minute or two to look at the conventions used in the file and abide by them even if you don't like them!**
+Try and make your code readable, as the minification process will remove all the whitespace and line breaks, use extra spacing to ensure readability.
 
-### Indentation
- 
+---
+
+Keep line length to a maximum of 120 characters - aim for between 80-100, don’t be afraid of the enter key - This makes readability easier for IDE’s and Version control compares.
+
+## Indentation
 * Indentation is your best friend.
 * Indent by tabs
 * Never double indent a line
-* No whitespace at the end of a line or on blank lines  
 
-### Whitespace
-
+## Whitespace
 * 3 blank lines between functions
-* New line at end of a file
-* Remove all trailing white space
-	
->	If you use Sublime Text, there is a setting for this:
->	"trim\_trailing\_white\_space\_on\_save": true
+* Newline at end of a file
+* Remove all trailing whitespace
+* Do not use whitespace to align things up, eg. variables, struct keys/values.
+* No whitespace at the end of a line or on blank lines
+    * If you use Sublime Text, there is a setting for this: 
+```
+"trim_trailing_white_space_on_save": true
+```
 
-### Naming Variables
+## Naming Variables
+* Use camelCase for variable names
+* Prefix function arguments with an underscore
+* One variable per a line
 
-* Use camelCase for short variable names
-* Seperate large variable names with an underscore
-
-
-### Comments
-
-* Start the file with comment explaining contents
-* Comment where possible, and when you feel there is an explanation to help others
+## Comments
+* Start the file with a brief comment explaining contents, the comment at the top of the file should include
+    * SVN Id tag
+    * @Description:
+* Comment where possible, and when you feel an explanation will help others, but don’t go overboard and comment every line. 
 * Comment block before each function/block, containing function name and brief description of what the function or block of code does.
-	
-#### Multi Line Comments:
 
-Leave a line above the first comment line, and below the last line of comment
+### Example JS / CFScript Comment Block: 
+``` language-javascript
+/**
+ *
+ * $Id: $
+ *
+ * @Description: I am a set of common JavaScript / jQuery functions and items used on multiple pages
+ *
+**/
+```
 
-	/**
-	 *
-	 * Comment Here
-	 * and Here
-	 * 
-	**/
-	
-	
-	//
-	//		Sass Comments Heading Blocks
-	//	___________________________________________________________________________
+### Example SCSS Comment Block:
+``` language-javascript
+// 
+// $Id: $
+//
+// @Description: SASS reusable modules
+//
+```
 
-	
-	<!---
-	 *
- 	 * CFML Comment
-	 *
-	--->
+### JS and SCSS Inline Comment - If more than one line use comment block
+``` language-javascript
+// Overwrite the clean button style for this area
+```
 
-Notice above the space of the at start of line before the asterisk the start and end line are inline then each line is one space in to start the asterisk, then one space after the asterisk to start your comment
+### Example CFML Comment
+``` language-javascript
+<!---
 
-#### Single Line Comments
+ $Id: $
 
-	/* --- CSS Comment Here --- */
+ @Description: 
 
-	// Sass Comments ( These are not output in compiled output )
-
-	// --- JS Comment / cfscript
+--->
+```
